@@ -18,9 +18,9 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_valid_calls(planeteer_calls)
-  #array=["hi", "Wind!"]
+  planeteer_calls=["g", "Wind!"]
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   planeteer_calls.find do |ind|
-    ind==valid_calls
+    valid_calls.include?(ind)
   end
 end
